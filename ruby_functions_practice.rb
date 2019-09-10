@@ -61,5 +61,11 @@ def cube_volume(number)
 end
 
 def sphere_volume(radius)
-  return (4 / 3.0) * Math::PI * (radius ** 3)
+  volume = (4.0 / 3.0) * Math::PI * (radius ** 3)
+  return volume.round(2)
+end
+
+def temp_in_fahrenheit(temperature)
+  celcius = (temperature - 32) *5.0/9.0
+  return celcius.round(2)
 end
